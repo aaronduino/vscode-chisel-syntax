@@ -737,6 +737,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>\b(poke|step|peek|expect)\b</string>
+					<key>name</key>
+					<string>support.function.chisel</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>\b(IO|Input|Output)\b</string>
 					<key>name</key>
 					<string>support.language.chisel</string>
