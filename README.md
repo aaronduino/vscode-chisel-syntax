@@ -1,10 +1,10 @@
-# Scala Syntax
+# Chisel Syntax
 
 [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=nicolasstucki.scala)
 
 ## Features
 
-Extension providing Scala syntax and code snippets.
+Extension providing Chisel syntax and code snippets.
 
 ## Requirements
 
