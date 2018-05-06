@@ -15,7 +15,7 @@
 	<key>keyEquivalent</key>
 	<string>^~S</string>
 	<key>name</key>
-	<string>Scala</string>
+	<string>Chisel</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -354,15 +354,27 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(false|null|true|Nil|None)\b</string>
+					<string>\b(false|null|true|Nil|None)(?:\s|$)</string>
 					<key>name</key>
 					<string>constant.language.scala</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.[0-9]+)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?|[0-9]+)([LlFfDd]|UL|ul)?\b</string>
+					<string>\b((?:false|true)\.B)\b</string>
+					<key>name</key>
+					<string>constant.language.chisel</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.[0-9]+)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?|[0-9]+)([LlFfDd]|UL|ul)?(?:\s|$)</string>
 					<key>name</key>
 					<string>constant.numeric.scala</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(-?\d+\.[SU]|\d+\.W)\b</string>
+					<key>name</key>
+					<string>constant.numeric.chisel</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -378,9 +390,21 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>\b(Bool|UInt|SInt)\b</string>
+					<key>name</key>
+					<string>storage.type.primitive.chisel</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>\b(String|Symbol)\b</string>
 					<key>name</key>
 					<string>storage.type.scala</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(Vec)\b</string>
+					<key>name</key>
+					<string>storage.type.chisel</string>
 				</dict>
 			</array>
 		</dict>
@@ -713,9 +737,45 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>\b(IO|Input|Output)\b</string>
+					<key>name</key>
+					<string>support.language.chisel</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(Mem|Reg|RegInit)\b</string>
+					<key>name</key>
+					<string>support.class.chisel</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\.(asInput|asOutput)\b</string>
+					<key>name</key>
+					<string>support.other.chisel</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(Module)\b</string>
+					<key>name</key>
+					<string>support.module.chisel</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(io)\b</string>
+					<key>name</key>
+					<string>variable.language.chisel</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>\b(else|if|do|while|for|yield|match|case)\b</string>
 					<key>name</key>
 					<string>keyword.control.flow.scala</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(when|\.elsewhen|\.otherwise|switch|is)\b</string>
+					<key>name</key>
+					<string>keyword.control.flow.chisel</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -1266,7 +1326,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.scala</string>
+	<string>source.chisel</string>
 	<key>uuid</key>
 	<string>158C0929-299A-40C8-8D89-316BE0C446E8</string>
 </dict>
