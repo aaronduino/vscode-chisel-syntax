@@ -1,9 +1,9 @@
 {
-    "name": "scala",
+    "name": "chisel",
     "displayName": "Scala Syntax (official)",
     "description": "Official Scala Syntax",
     "version": "0.1.1",
-    "publisher": "scala-lang",
+    "publisher": "chisel-lang",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
         "vscode": "^1.5.0"
@@ -20,29 +20,29 @@
     "contributes": {
         "languages": [
             {
-                "id": "scala",
+                "id": "chisel",
                 "aliases": [
-                    "Scala",
-                    "scala"
+                    "Chisel",
+                    "chisel"
                 ],
                 "extensions": [
                     ".scala",
-                    ".sbt"
+                    ".chisel"
                 ],
                 "configuration": "./language-configuration.json"
             }
         ],
         "snippets": [
             {
-              "language": "scala",
-              "path": "./snippets/scala.json"
+              "language": "chisel",
+              "path": "./snippets/chisel.json"
             }
         ],
         "grammars": [
             {
-                "language": "scala",
-                "scopeName": "source.scala",
-                "path": "./syntaxes/Scala.tmLanguage"
+                "language": "chisel",
+                "scopeName": "source.chisel",
+                "path": "./syntaxes/Chisel.tmLanguage"
             }
         ]
     }
