@@ -27,5 +27,15 @@
 		"protected": { "prefix": "protected", "body": "protected ", "description": "protected keyword" },
 		"catch": { "prefix": "catch", "body": "catch ", "description": "catch keyword" },
 		"finally": { "prefix": "finally", "body": "finally ", "description": "finally keyword" }
+	},
+	"source.chisel": {
+		"module": {
+			"prefix": "module",
+			"body": "class ${1:ModuleName} extends Module {\n\t${2}\n}"
+		},
+		"val io": {
+			"prefix": "val io",
+			"body": "val io = IO(new Bundle {\n\t\t${1}\n})"
+		}
 	}
 }
