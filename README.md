@@ -2,6 +2,8 @@
 
 [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=nicolasstucki.scala)
 
+![Comparison of Scala vs Chisel syntax highlighting](images/comparison.gif)
+
 ## Features
 
 Extension providing Chisel syntax and code snippets.
