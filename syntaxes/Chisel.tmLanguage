@@ -779,7 +779,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(when|\.elsewhen|\.otherwise|switch|is)\b</string>
+					<string>\b(when|elsewhen|otherwise|switch|is)\b</string>
 					<key>name</key>
 					<string>keyword.control.flow.chisel</string>
 				</dict>
