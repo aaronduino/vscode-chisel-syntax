@@ -3,7 +3,7 @@
     "displayName": "Chisel Syntax",
     "description": "Support for Chisel HDL",
     "version": "0.0.0",
-    "publisher": "chisel-lang",
+    "publisher": "aaronduino",
     "license": "MIT",
     "engines": {
         "vscode": "^1.5.0"
