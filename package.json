@@ -1,21 +1,21 @@
 {
     "name": "chisel",
-    "displayName": "Scala Syntax (official)",
-    "description": "Official Scala Syntax",
-    "version": "0.1.1",
+    "displayName": "Chisel Syntax",
+    "description": "Support for Chisel HDL",
+    "version": "0.0.0",
     "publisher": "chisel-lang",
-    "license": "SEE LICENSE IN LICENSE.md",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.5.0"
     },
-    "homepage": "https://github.com/scala/vscode-scala-syntax/blob/master/README.md",
+    "homepage": "https://github.com/aaronduino/vscode-chisel-syntax",
     "repository": {
         "type": "git",
-        "url": "https://github.com/scala/vscode-scala-syntax.git"
+        "url": "https://github.com/aaronduino/vscode-chisel-syntax.git"
     },
     "icon": "images/smooth-spiral.png",
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [
