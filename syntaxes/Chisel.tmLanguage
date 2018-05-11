@@ -755,7 +755,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\.(asInput|asOutput)\b</string>
+					<string>\.(asInput|asOutput|asUInt|asSInt)\b</string>
 					<key>name</key>
 					<string>support.other.chisel</string>
 				</dict>
