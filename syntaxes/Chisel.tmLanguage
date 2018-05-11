@@ -366,7 +366,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.[0-9]+)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?|[0-9]+)([LlFfDd]|UL|ul)?(?:\s|$)</string>
+					<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.[0-9]+)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?|[0-9]+)([LlFfDd]|UL|ul)?(?!\.)</string>
 					<key>name</key>
 					<string>constant.numeric.scala</string>
 				</dict>
