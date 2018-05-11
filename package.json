@@ -2,7 +2,7 @@
     "name": "chisel",
     "displayName": "Chisel Syntax",
     "description": "Support for Chisel HDL",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "aaronduino",
     "license": "MIT",
     "engines": {
