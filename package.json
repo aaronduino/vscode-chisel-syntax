@@ -2,7 +2,7 @@
     "name": "chisel",
     "displayName": "Chisel Syntax",
     "description": "Support for Chisel HDL",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "publisher": "aaronduino",
     "license": "MIT",
     "engines": {
@@ -34,8 +34,8 @@
         ],
         "snippets": [
             {
-              "language": "chisel",
-              "path": "./snippets/chisel.json"
+                "language": "chisel",
+                "path": "./snippets/chisel.json"
             }
         ],
         "grammars": [
